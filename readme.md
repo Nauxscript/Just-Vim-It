@@ -5,22 +5,20 @@
 
 ## 写在前面
 
-由于我的主要使用场景是在vscode 中使用vim，以及在命令行中简单使用，所以大部分时候是围绕着vscode 中的vim 使用场景展开，但只要跟着全程训练坚持下来，再加上你聪明的小脑袋瓜子，将会很容易地知道并掌握如何在其他软件（如 webstorm、sublime、chrome、obsidian）中使用vim来脱离对鼠标的以来，甚至不仅仅vim，你会想要找到更多更全面的方式，如 Alfred （假设你没有使用过它），所以对于 vim 的掌握程度或熟练程度，它只取决于你有多想摆脱频繁移动手去使用鼠标以及你使用vim的次数。
+由于我的主要使用场景是在 vscode 中使用 vim，以及在命令行中简单使用，所以大部分时候是围绕着 vscode 中的 vim 使用场景展开，但只要跟着全程训练坚持下来，再加上你聪明的小脑袋瓜子，将会很容易地知道并掌握如何在其他软件（如 webstorm、sublime、chrome、obsidian）中使用 vim 来脱离对鼠标的以来，甚至不仅仅 vim，你会想要找到更多更全面的方式，如 Alfred （假设你没有使用过它），所以对于 vim 的掌握程度或熟练程度，它只取决于你有多想摆脱频繁移动手去使用鼠标以及你使用 vim 的次数。
 
 ## 环境准备
-  一台电脑（mac 或 linux 为佳，window的话我随后再试试有何不同，在issue区会有一些常见问题，也可自行查找）
-  一个键盘
-  鼠标 / 触控板（本训练无法也不会教你完全不使用鼠标 / 键盘操作
-  坚持的心
-
-由于我的主要使用场景是在vscode 中使用vim，以及在命令行中简单使用，所以大部分时候是围绕着vscode 中的vim 使用场景展开，但只要跟着全程训练坚持下来，再加上你聪明的小脑袋瓜子，将会很容易地知道并掌握如何在其他软件（如 webstorm、sublime、chrome、obsidian）中使用vim来脱离对鼠标的以来，甚至不仅仅vim，你会想要找到更多更全面的方式，如 Alfred （假设你没有使用过它），所以对于 vim 的掌握程度或熟练程度，它只取决于你有多想摆脱频繁移动手去使用鼠标以及你使用vim的次数。
+  * **一台电脑**（mac 或 linux 为佳，window 的话我随后再试试有何不同，在 issue 区会有一些常见问题，也可自行查找）
+  * **一个键盘**
+  * **鼠标 / 触控板**（本训练无法也不会教你完全不使用鼠标 / 键盘操作
+  * **坚持的心**
 
 ## vscode 环境准备：
   1. 安装 vscode [vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) 拓展
   2. 根据 vscode vim 中 Install 部分的说明对电脑进行设置（mac）
 
 ## 问题 / 反馈
-在issue中会对一些大家可能或常见的问题进行补充和说明，遇到问题可以查阅issue或自己google，也欢迎提issue，感谢！
+在 issue 中会对一些大家可能或常见的问题进行补充和说明，遇到问题可以查阅 issue 或自己 google，也欢迎提 issue，感谢！
 
 ## 最重要的一点
-该训练是根据本人在 [@崔效瑞](https://github.com/cuixiaorui) 的 [键盘侠养成训练营](https://appewiejl9g3764.h5.xiaoeknow.com/p/course/ecourse/course_28y3lTEa0pnA2HVLtZiz1vQ2kH4)中的笔记，本着共同进步、开源的精神整理而成，希望大家饮水不忘挖井人，多多支持他，再次感谢！
+该训练是根据本人在 [@崔效瑞](https://github.com/cuixiaorui) 的 [键盘侠养成训练营](https://appewiejl9g3764.h5.xiaoeknow.com/p/course/ecourse/course_28y3lTEa0pnA2HVLtZiz1vQ2kH4) 中的笔记，本着共同进步、开源的精神整理而成，希望大家饮水不忘挖井人，多多支持他，再次感谢！
