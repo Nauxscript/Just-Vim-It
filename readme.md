@@ -1,4 +1,4 @@
-# Just Vim It 
+# Just Vim It （now just for mac）
 这是一个纯小白入门 vim 的训练，这里有两个关键点
 1. 使用于纯小白的（或者已经接触过vim但想构建一套基础，使用日常工作的vim方案的朋友），如果你不属于这样的人群，那可能这个训练并不适合你，因为可能在本训练中的一些快捷键设置、使用习惯和你已养成的并不相符
 2. 这是一个入门训练，本训练只能保证在你认真使用、学习后，可以在日常、工作的代码工作中使用vim完成日常会用到的操作，更深一层的技巧则是在于你本人的探索
@@ -21,6 +21,11 @@
 ## vscode 环境准备：
   1. 安装 vscode [vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) 拓展
   2. 根据 vscode vim 中 Install 部分的说明对电脑进行设置（mac）
+
+## 键位映射准备
+  - 推荐使用 karabiner-elements 进行键位映射，映射规则如下：
+    1. ctrl 与 caps lock 互换；在日常中，caps lock 键的作用其实不大而 ctrl 键的使用频率更高，但在他们的位置上却相反，所以换过来会更适合我们日常用（可能部分朋友是使用 caps lock 进行输入法中英文切换，这时候我们可以使用搜狗输入法或其他可以使用 shift 键切换中英文的输入法就可以了)
+    2. ctrl + hjkl 映射为 方向键；这可以使我们在 insert mode 中方便地移动光标
 
 ## 问题 / 反馈
 在 issue 中会对一些大家可能或常见的问题进行补充和说明，遇到问题可以查阅 issue 或自己 google，也欢迎提 issue，感谢！
