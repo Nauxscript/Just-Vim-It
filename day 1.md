@@ -70,14 +70,6 @@ vim is tutorial simple a easy this
 this vim is tutorial simple easy a
 ```
 
-1. 进入输入模式 i (在前插入) a (在后插入); 命令模式 : ctrl + [
-2. 命令模式：上: k 下: j 左: h 右: l; 
-  输入模式：上下左右 ctrl + kjhl 在命令行、微信输入、浏览器地址栏等地方都有效 (vscode 要另外配置)
-3. 命令模式中删除一整行 cc / dd 
-  cc : 删除整行并进入输入模式
-  dd : 删除整行但不进入输入模式
-4. 命令模式 e : 跳到单词尾 ; b : 跳到单词头 ; w : 下一个单词头
-
 ### 加点料
 * 跳到单词尾：`e` （命令模式中） 
 * 跳到单词头：`b` （命令模式中）
