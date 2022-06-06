@@ -18,3 +18,32 @@
   - 可视化模式下 `o`：切换光标位置，此时会在选中区域的头和尾之间切换
 
 ### 技巧
+
+  - 多行修改：如果我们要统一修改多行的内容，可以用 `Ctrl + v` 选中多行后，通过 `I` 或 `A` 进行前插入或后插入 
+  - 通过可视化模式复制的内容，其实是暂存在了 vim 的寄存器中（`d` `c` 等操作其实也是，所以在 `d` 后，你也可以用 `p` 粘贴出来），而我们的 `command + c` 复制的内容则和 vim 无关，也就意味着，我们可以通过这两种不同的指令同时复制不同的内容而不会冲突，在某些场景下可以起到不错的辅助
+
+### 小练习
+```
+1. 复制以下单词：
+
+javascript
+
+python
+
+java
+
+swift
+
+2. 把以下所有句子的第一个单词改为 Just Vim It
+
+this is a simple easy vim tutorial
+this is a simple easy vim tutorial
+this is a simple easy vim tutorial
+this is a simple easy vim tutorial
+this is a simple easy vim tutorial
+this is a simple easy vim tutorial
+this is a simple easy vim tutorial
+this is a simple easy vim tutorial
+this is a simple easy vim tutorial
+
+```
