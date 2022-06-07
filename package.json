@@ -1,0 +1,24 @@
+{
+  "name": "just-vim-it",
+  "version": "1.0.0",
+  "description": "这是一个纯小白入门 vim 的训练，这里有两个关键点 1. 使用于纯小白的（或者已经接触过vim但想构建一套基础，使用日常工作的vim方案的朋友），如果你不属于这样的人群，那可能这个训练并不适合你，因为可能在本训练中的一些快捷键设置、使用习惯和你已养成的并不相符 2. 这是一个入门训练，本训练只能保证在你认真使用、学习后，可以在日常、工作的代码工作中使用vim完成日常会用到的操作，更深一层的技巧则是在于你本人的探索",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nauxscript/Just-Vim-It.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nauxscript/Just-Vim-It/issues"
+  },
+  "homepage": "https://github.com/Nauxscript/Just-Vim-It#readme",
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.1"
+  }
+}
