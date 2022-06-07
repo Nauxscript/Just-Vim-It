@@ -1,6 +1,7 @@
 module.exports = {
   title: "Just Vim It",
   description: "A simple vim tutorial for who haven't learn \ use \ know about vim",
+  lang: "zh-CN",
   lastUpdated: true,
   themeConfig: {
     siteTitle: "Just Vim It",
@@ -23,7 +24,7 @@ module.exports = {
           { text: 'Day 3', link: '/day-3.md' },
           { text: 'Day 4', link: '/day-4.md' },
           { text: 'Day 5', link: '/day-5.md' },
-          { text: 'Rest Day 1', link: '/rest-dy-1.md' },
+          { text: 'Rest Day 1', link: '/rest-day-1.md' },
           { text: 'Day 6', link: '/day-6.md' },
         ]
       }
