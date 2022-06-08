@@ -1,4 +1,16 @@
 # 继续深入：文本对象
+  
+  在前面的训练中，我们学习了（比较）快速的删除 `X` `S`，以及选中文本 `v` 等指令，但在日常更多的使用中，我们常常是需要
+
+  - 删除某些多余的变量
+  - 复制某个单词
+  - 删除被特定符号中包裹的某些内容，如 `()` `{}` `[]` 这些符号
+  - 删除一段内容
+  - ...等等等等
+
+  这时候之前的指令明显就不够用了。那就需要来认真认识一下 vim 的文本对象了。
+
+## 文本对象
 
   在 vim 中，文本是结构化的存在，即 **文本对象（text—object）**；而 vim 对于文本对象，专门有一部分语法，用于快速对文本对象进行编辑操作。 
 
@@ -6,30 +18,71 @@
 
   文本对象的操作语法：**operater + 范围（内 / 外）+ 文本对象**
   
-  - 内：`i` ，意指 inner
-  - 外：`a` ，英文单词 a，一个的意思
+  - 内部：`i` ，意指 inner
+  - 外部：`a` ，英文单词 a，一个的意思
 
   可能看到这里，你会有点迷糊，没关系，我们下面会举例说明。
-  
-## 操作符
 
 ## 对象
 
-  - `(` `)`
-  - `b`
-  - `{` `}`
-  - `B`
-  - `[` `]`
-  - `<` `>`
-  - `t`
-  - `'` `'`
-  - `"` `"`
-  - `` ` `` `` ` ``
+  vim 中的文本对象主要有这一些：
+
+  - `(` 或 `)` ：一对 `()` 
+  - `b` ：一对 `()` 
+  - `{` 或 `}` ：一对 `{}` 
+  - `B` ：一对 `{}` 
+  - `[` 或 `]` ：一对 `[]` 
+  - `<` 或 `>` ：一对 `<>` 
+  - `t` ：XML标签
+  - `'` 或 `'` ：一对 `''` 
+  - `"` 或 `"` ：一对 `""` 
+  - `` ` `` 或 `` ` `` ：一对 `` `` ``
+  - `w` ：一个单词
+  - `s` ：一个句子；以 `.` `!` `?` 结尾即为一个句子
+  - `p` ：一个段落；以一个换行符间隔即为一个段落
 
 ## 组合举例
 
+  看了列举出来的文本对象后，可能你会更迷糊，那我们可以先来举个例子：
+
+  - `viw`：`v` 是指选中， `i` 指内部， `w` 指一个单词，这个指令可以快速选中光标所在的单词，无论光标是在单词的前中后，都可以起效
+  - `vi(`：`(` 指一个中括号，如果光标在一对括号里面，这个指令可以快速选中括号的内部内容（不包括括号本身），如 `('test')` 中的 `'test'`；同样的，`vi）` 或 `vib` 也是一样的效果
+  - `va(`: 这个指令也可以选中括号内部的内容，并且会把括号本身也选中，如这 `('test')` 中使用这个指令，则会选中 `('test')`；这就是前面 `a` 被解释为外部的原因
+
+  相信看完这个例子，你应该大概能明白文本对象的使用方式了；对了，以上的 `v` 也可以换成 `d` `c`等操作符；这样下来，日常的使用中就更丝滑了！
+
 ## vim-textobj-arguments & vim-textobj-entire
 
+  在开始让你练习前，再提多一个内容：vim-textobj-arguments 与 vim-textobj-entire：
+  这是两个 vim 的插件，额外提供了两个文本对象 `a` 和 `e`，使用方式和上面提到的一样，具体的功能如下：
+
+  ```js
+  // Examples:
+  // 删除一个参数
+      function(arg1,    ch)  //在第二个参数（即 “    ch”）中输入 daa
+      function(arg1|) // 就会变成这样，| 代表这是光标所在位置；如果这是再输入 daa
+      function(|) // 就会变成这样
+
+  case2) change Inner argument
+      function(int arg1,    ch<press 'cia' here>ar* arg2="a,b,c(d,e)")
+      function(int arg1,    <cursor here>)
+      
+  case 3) smart argument recognition (g:argumentobject_force_toplevel = 0)
+       function(1, (20<press 'cia' here>*30)+40, somefunc2(3, 4))
+       function(1, <cursor here>, somefunc2(3, 4))
+       
+       function(1, (20*30)+40, somefunc2(<press 'cia' here>3, 4))
+       function(1, (20*30)+40, somefunc2(<cursor here>4))
+
+  case 4) smart argument recognition (g:argumentobject_force_toplevel = 1)
+       function(1, (20<press 'cia' here>*30)+40, somefunc2(3, 4))
+       function(1, <cursor here>, somefunc2(3, 4)) " note that this result is the same of above.
+       
+       function(1, (20*30)+40, somefunc2(<press 'cia' here>3, 4))
+       function(1, (20*30)+40, <cursor here>) " sub-level function is deleted because it is a argument in terms of the outer function.
+  ```
+  
+  
   `ia`：不包含分隔符
   `aa`：包含分隔符
   `ae`：删除当前文本所有内容
