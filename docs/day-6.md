@@ -54,39 +54,31 @@
 ## vim-textobj-arguments & vim-textobj-entire
 
   在开始让你练习前，再提多一个内容：vim-textobj-arguments 与 vim-textobj-entire：
-  这是两个 vim 的插件，额外提供了两个文本对象 `a` 和 `e`，使用方式和上面提到的一样，具体的功能如下：
+  这是两个 vim 的插件，额外提供了两个文本对象 `a` 和 `e`，使用方式和上面提到的一样；`a` 具体的功能如下：
 
   ```js
   // Examples:
   // 删除一个参数
-      function(arg1,    ch)  //在第二个参数（即 “    ch”）中输入 daa
-      function(arg1|) // 就会变成这样，| 代表这是光标所在位置；如果这是再输入 daa
-      function(|) // 就会变成这样
+  function(arg1,    ch)  // 在第二个参数（即 “    ch”）中输入 daa
+  function(arg1|) // 就会变成这样，| 代表这时光标所在位置；如果这时再输入 daa
+  function(|) // 就会变成这样
 
-  case2) change Inner argument
-      function(int arg1,    ch<press 'cia' here>ar* arg2="a,b,c(d,e)")
-      function(int arg1,    <cursor here>)
-      
-  case 3) smart argument recognition (g:argumentobject_force_toplevel = 0)
-       function(1, (20<press 'cia' here>*30)+40, somefunc2(3, 4))
-       function(1, <cursor here>, somefunc2(3, 4))
-       
-       function(1, (20*30)+40, somefunc2(<press 'cia' here>3, 4))
-       function(1, (20*30)+40, somefunc2(<cursor here>4))
-
-  case 4) smart argument recognition (g:argumentobject_force_toplevel = 1)
-       function(1, (20<press 'cia' here>*30)+40, somefunc2(3, 4))
-       function(1, <cursor here>, somefunc2(3, 4)) " note that this result is the same of above.
-       
-       function(1, (20*30)+40, somefunc2(<press 'cia' here>3, 4))
-       function(1, (20*30)+40, <cursor here>) " sub-level function is deleted because it is a argument in terms of the outer function.
+  // 修改一个参数
+  function(arg1,    ch) // 在第二个参数（即 “    ch”）中输入 cia
+  function(arg1,    |) // 就会变成这样，| 代表这时光标所在位置
   ```
   
+  以上可以看到在 文本对象 a 中，在他的前面接上表示范围的指令 a 和 i 时，它们的区别是是否包括前面的空格和符号（即当前参数外的内容)。所以规则如下：
   
-  `ia`：不包含分隔符
-  `aa`：包含分隔符
-  `ae`：删除当前文本所有内容
-  `ie`：删除当前文本所有内容，但不包括前面和后面的 blank 字符
+  - `ia`：不包含分隔符
+  - `aa`：包含分隔符
+
+  `e` 在这里代表 entire ，即所有的意思；顾名思义，会针对当前文件所有内容左操作；规则如下：
+
+  - `ae`：当前文本所有内容
+  - `ie`：当前文本所有内容，但不包括前面和后面的 blank 字符
+
+  所以当我们要选中当前文件所有内容时，就可以直接用 `vie` ，其他删除复制也如此类推。
   
 ## 小练习
   
