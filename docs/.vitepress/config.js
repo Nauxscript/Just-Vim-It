@@ -26,6 +26,7 @@ module.exports = {
           { text: 'Day 5', link: '/day-5.md' },
           { text: 'Rest Day 1', link: '/rest-day-1.md' },
           { text: 'Day 6', link: '/day-6.md' },
+          { text: 'Day 7', link: '/day-7.md' },
         ]
       }
     ],
