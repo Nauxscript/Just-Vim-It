@@ -13,7 +13,9 @@ module.exports = {
       {
         text: "介绍",
         items: [
-          { text: "写在前面", link: "/index.md" }
+          { text: "写在前面", link: "/index.md" },
+          { text: "Mac 环境准备", link: "/for-mac.md" },
+          { text: "Window 环境准备", link: "/for-window.md" },
         ]
       },
       {
