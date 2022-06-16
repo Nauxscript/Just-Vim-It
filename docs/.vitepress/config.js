@@ -3,12 +3,18 @@ module.exports = {
   description: "A simple vim tutorial for who haven't learn \ use \ know about vim",
   lang: "zh-CN",
   lastUpdated: true,
+  // add the favicon file in public folder (public folder shoul not in vitepress but root ) and add the head prarm asll below
+  head: [
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/public/favicon.ico' }],
+  ],
   themeConfig: {
     siteTitle: "Just Vim It",
-    logo: 'public/logo.png',
+    logo: '/logo.png',
     nav: [
-      { text: 'About Nauxscript', link: 'https://www.nauxscript.com' },
-      { text: 'Github', link: 'https://github.com/Nauxscript/Just-Vim-It' }
+      { text: 'About Nauxscript', link: 'https://github.com/Nauxscript/' },
+    ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/Nauxscript/Just-Vim-It' },
     ],
     sidebar: [
       {
@@ -38,6 +44,10 @@ module.exports = {
         ]
       }
     ],
-    lastUpdatedText: "Last updated" 
+    laslltUpdatedText: "最后更新",
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2022-present Nauxscript'
+    }
   },
 }
