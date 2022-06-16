@@ -5,6 +5,7 @@ module.exports = {
   lastUpdated: true,
   themeConfig: {
     siteTitle: "Just Vim It",
+    logo: 'public/logo.png',
     nav: [
       { text: 'About Nauxscript', link: 'https://www.nauxscript.com' },
       { text: 'Github', link: 'https://github.com/Nauxscript/Just-Vim-It' }
