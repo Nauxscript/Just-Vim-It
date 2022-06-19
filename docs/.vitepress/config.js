@@ -42,6 +42,7 @@ module.exports = {
           { text: 'Day 12', link: '/day-12.md' },
           { text: 'Day 13', link: '/day-13.md' },
           { text: 'Day 14', link: '/day-14.md' },
+          { text: 'Day 15', link: '/day-15.md' },
         ]
       }
     ],
