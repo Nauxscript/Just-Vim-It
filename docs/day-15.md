@@ -24,7 +24,9 @@
     - `command` + `control` + `\`：在当前窗口的上边或下边新建窗口
 
   ### 窗口切换
+  
     - `shift` + `control` + `h` `j` `k` `l`：切换到上 / 下 / 左 / 右方向的窗口 (需要有将 `control` + `h` `j` `k` `l` 映射为方向键)，并且在 vscode 的 `keybindings.json` 中添加如下映射,映射其实是把 `shift` + 方向键映射为 vim 的窗口切换键了：
+
       ```json
       {
         "key": "shift+left",
@@ -59,9 +61,10 @@
         }
       }
       ```
-      :::info 多嘴一句
-      感觉 `shift` + `control` + `h` `j` `k` `l` 和 `control` + `w` + `h` `j` `k` `l` 其实是差不多的，改不改区别不大。
-      :::
+
+  :::info 多嘴一句
+  感觉 `shift` + `control` + `h` `j` `k` `l` 和 `control` + `w` + `h` `j` `k` `l` 其实是差不多的，改不改区别不大。
+  :::
 
 
   ### 关闭窗口
