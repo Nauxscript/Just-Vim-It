@@ -5,7 +5,7 @@ module.exports = {
   lastUpdated: true,
   // add the favicon file in public folder (public folder shoul not in vitepress but root ) and add the head prarm asll below
   head: [
-    ['link', { rel: 'icon', type: 'image/x-icon', href: '/public/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   ],
   themeConfig: {
     siteTitle: "Just Vim It",
