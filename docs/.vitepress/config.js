@@ -26,7 +26,7 @@ module.exports = {
         ]
       },
       {
-        text: '训练',
+        text: 'Vim',
         items: [
           { text: 'Day 1：起步', link: '/vim/day-1.md' },
           { text: 'Day 2：行相关命令', link: '/vim/day-2.md' },
@@ -45,7 +45,7 @@ module.exports = {
           { text: 'Day 15：窗口管理大法', link: '/vim/day-15.md' },
           { text: 'Day 16：快速删除一个函数', link: '/vim/day-16.md' },
           { text: 'Day 17：vim 的宏操作', link: '/vim/day-17.md' },
-          { text: 'Day 18：vim 的宏操作', link: '/vim/day-18.md' },
+          { text: 'Day 18：调用 vscode 命令', link: '/vim/day-18.md' },
         ]
       }
     ],
