@@ -1,4 +1,4 @@
-# 任意门：让光标移动得随心所欲
+# 任意门：easymotion，让光标移动得随心所欲
 
 ## 插件：vim-easymotion
   
