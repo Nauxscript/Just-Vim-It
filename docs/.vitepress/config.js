@@ -45,6 +45,7 @@ module.exports = {
           { text: 'Day 15：窗口管理大法', link: '/day-15.md' },
           { text: 'Day 16：快速删除一个函数', link: '/day-16.md' },
           { text: 'Day 17：vim 的宏操作', link: '/day-17.md' },
+          { text: 'Day 18：vim 的宏操作', link: '/vim/day-18.md' },
         ]
       }
     ],
