@@ -1,0 +1,20 @@
+{
+  "index_name": "just_vim_it",
+  "start_urls": ["https://vim.nauxscript.com"],
+  "selectors": {
+    "lvl0": ".content h1",
+    "lvl1": ".content h2",
+    "lvl2": ".content h3",
+    "lvl3": ".content h4",
+    "lvl4": ".content h5",
+    "lvl5": ".content h6",
+    "content": ".content p, .content li"
+  },
+  "selectors_exclude": [
+    "aside",
+    ".page-footer",
+    ".next-and-prev-link",
+    ".table-of-contents"
+  ],
+  "js_render": true
+}
