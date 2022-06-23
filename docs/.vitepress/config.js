@@ -47,7 +47,13 @@ module.exports = {
           { text: 'Day 17：vim 的宏操作', link: '/vim/day-17.md' },
           { text: 'Day 18：调用 vscode 命令', link: '/vim/day-18.md' },
         ]
-      }
+      },
+      {
+        text: "vscode",
+        items: [
+          { text: "Day 19：文件与窗口基础操作",  link: '/vscode/day-19.md'}
+        ]
+      } 
     ],
     laslltUpdatedText: "最后更新",
     footer: {
