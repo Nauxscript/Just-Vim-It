@@ -28,7 +28,7 @@
   :::
 
 ## 问题 / 反馈
-在 issue 中会对一些大家可能或常见的问题进行补充和说明，遇到问题可以查阅 issue 或自己 google，也欢迎提 issue，感谢！
+在 issue 中会对一些大家可能或常见的问题进行补充和说明，遇到问题可以查阅 issue 或自己 google，也欢迎提 issue；如果文章中有错误等也麻烦大家指出，十分感谢！
 
 ## 最重要的一点
 该训练是根据本人在 [@崔效瑞](https://github.com/cuixiaorui) 的 [键盘侠养成训练营](https://appewiejl9g3764.h5.xiaoeknow.com/p/course/ecourse/course_28y3lTEa0pnA2HVLtZiz1vQ2kH4) 中的笔记，本着共同进步、开源的精神整理而成，希望大家饮水不忘挖井人，多多支持他，再次感谢！
