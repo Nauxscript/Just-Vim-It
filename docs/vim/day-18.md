@@ -20,4 +20,41 @@
 - 重名名变量：`f2`
 - 折叠代码：`option` + `command` + '['
 
-但是由于我们现在使用 vim 了，为了让组合按键更舒服，也为了降低记忆快捷键的心智负担，统一键位刻不容缓（夸张手法，其实看个人；你用的舒服其实不改也没有关系）。
+## 使用 vim 调用 vscode 命令
+
+虽然上面提到的 vscode 自带的快捷键已经可以实现对应的需求，但由于我们现在使用 vim 了，为了让组合按键更舒服，也为了降低记忆快捷键的心智负担，统一键位刻不容缓（夸张手法，其实看个人；你用的舒服其实不改也没有关系）。
+
+我们先打开 vscode 的快捷键配置页面（非 json 文件；在 vscode 界面左下角齿轮按钮选项栏 - 键盘快捷方式或快捷键 `command + k + command + s` 打开），可以通过关键词搜索或组合键录制查找到格式化文档快捷键详细数据，在对应记录右键后选择 [复制命令 ID]（copy command id），这时你复制到的内容其实是 `editor.action.formatDocument`，然后打开 vscode `setting.json`，配置如下内容：
+
+```json
+"vim.normalModeKeyBindingsNonRecursive": [
+  ...
+  {
+    "before": ["<Leader>", "f", "d"],
+    "commands": ["editor.action.formatDocument"] 
+  }
+  ...
+]
+```
+这就代表我们把 `<Leader>` + `f` + `d` 映射成调用 vscode 的格式化文档命令 `editor.action.formatDocument`。
+
+同理我们也可以把 `<Leader>` + `[` 映射成折叠代码；但在使用折叠代码的命令时，我们会发现，折叠完代码后，一旦我们把光标往下移动，折叠的代码就又被展开了，这明显是不应当的；这时我们可以利用 vim 的 `$` 和 `%` 命令；即在折叠完后，我们把光标移到行尾所在的花括号（以 JavaScript 为例，即移到行尾的可闭合符号上），再使用 `%` 跳到另一侧的闭合符号，这样就可以避免展开折叠的代码块了。配置如下：
+
+```json
+{
+  "before": ["<Leader>", "["],
+  "commands": [
+    {
+      "command": "editor.fold",
+    },
+    {
+      "command": "vim.remap",
+      "args": {
+          "after": ["$", "%"]
+      }
+    }
+  ]
+}
+```
+
+这样配置后，当我们使用 `<Leader>` + `[` 折叠代码块时，折叠完后光标就在折叠后的代码块的后面了。
