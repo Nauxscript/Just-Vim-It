@@ -51,7 +51,9 @@ module.exports = {
       {
         text: "vscode",
         items: [
-          { text: "Day 19：文件与窗口基础操作",  link: '/vscode/day-19.md'}
+          { text: "Day 19：文件与窗口基础操作",  link: '/vscode/day-19.md'},
+          { text: "Day 20：vscode 多窗口操作",  link: '/vscode/day-20.md'},
+          { text: "Day 21：vscode 全搜索命令",  link: '/vscode/day-21.md'},
         ]
       } 
     ],
