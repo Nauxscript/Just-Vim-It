@@ -57,6 +57,12 @@ module.exports = {
         ]
       } 
     ],
+    algolia: {
+      appId: 'RVMP1DL10N',
+      apiKey: 'b6698444fb6414c2328728cdbc9eb681',
+      indexName: 'just-vim-it',
+      debug: false
+    },
     laslltUpdatedText: "最后更新",
     footer: {
       message: 'Released under the MIT License.',
