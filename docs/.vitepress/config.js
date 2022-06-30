@@ -52,11 +52,11 @@ module.exports = {
         text: "vscode",
         items: [
           { text: "Day 19：文件与窗口基础操作",  link: '/vscode/day-19.md'},
-          { text: "Day 20：vscode 多窗口操作",  link: '/vscode/day-20.md'},
-          { text: "Day 21：vscode 全搜索命令",  link: '/vscode/day-21.md'},
-          { text: "Day 22：vscode 开发常用小技巧",  link: '/vscode/day-22.md'},
-          { text: "Day 23：vscode 挖掘快捷键场景",  link: '/vscode/day-23.md'},
-          { text: "Day 24：vscode git 常用操作",  link: '/vscode/day-24.md'},
+          { text: "Day 20：常用窗口操作",  link: '/vscode/day-20.md'},
+          { text: "Day 21：全局搜索命令",  link: '/vscode/day-21.md'},
+          { text: "Day 22：开发常用小技巧",  link: '/vscode/day-22.md'},
+          { text: "Day 23：挖掘快捷键场景",  link: '/vscode/day-23.md'},
+          { text: "Day 24：git 常用操作",  link: '/vscode/day-24.md'},
         ]
       } 
     ],
