@@ -56,7 +56,8 @@ module.exports = {
           { text: "Day 21：全局搜索命令",  link: '/vscode/day-21.md'},
           { text: "Day 22：开发常用小技巧",  link: '/vscode/day-22.md'},
           { text: "Day 23：挖掘快捷键场景",  link: '/vscode/day-23.md'},
-          { text: "Day 24：git 常用操作",  link: '/vscode/day-24.md'},
+          { text: "Day 24：Git 常用操作",  link: '/vscode/day-24.md'},
+          { text: "Day 25：Snippet 代码片段",  link: '/vscode/day-25.md'},
         ]
       } 
     ],
