@@ -62,6 +62,7 @@ module.exports = {
           { text: "Day 27：VSpaceCode 插件",  link: '/vscode/day-27.md'},
           { text: "Day 28：Git 神器 lazygit",  link: '/vscode/day-28.md'},
           { text: "Day 29：终端的基本操作",  link: '/vscode/day-29.md'},
+          { text: "Day 30：Debug the Bug",  link: '/vscode/day-30.md'},
         ]
       } 
     ],
