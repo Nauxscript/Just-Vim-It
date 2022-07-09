@@ -36,6 +36,10 @@ module.exports = {
             text: "Window 环境准备",
             link: "/for-window.md"
           },
+          {
+            text: "改键建议及设置参考",
+            link: "/keybinding.md"
+          },
         ]
       },
       {
@@ -169,9 +173,14 @@ module.exports = {
       {
         text: "Chrome",
         items: [{
-          text: "Day 31：浏览器中的 Vim",
-          link: '/chrome/day-31.md'
-        }]
+            text: "Day 31：浏览器中的 Vim",
+            link: '/chrome/day-31.md'
+          },
+          {
+            text: "Day 32：Vimium-c 页面操作",
+            link: '/chrome/day-32.md'
+          }
+        ]
       }
     ],
     algolia: {
