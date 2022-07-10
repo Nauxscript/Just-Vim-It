@@ -76,8 +76,77 @@
 
 ## 修改原有配置
 
-## 自定义
+虽然 VSpaceCode 提供一整套的规则，但每个人都有自己的一些个人习惯和喜好，而 VSpaceCode 当然也提供了重写和新增命令的方式。
 
-:::tip 拓展
+### 重写已有命令
 
+VSpaceCode 提供了个配置项 `vspacecode.bindingOverrides`，通过这个配置可以重写已有的一些命令；比如我们我们触发 VSpaceCode，可以看到 `g` 选项为 Git 的操作，`g` 里面的 `s` 选项为 `status`，即 Git 查看状态命令；而如果我们要把这个命令改为跳转到某行（go to line）的功能，我们可以在 VSCode 的 `setting.json` 中如此配置：
+
+```json
+"vspacecode.bindingOverrides": [
+  ...
+  {
+    "keys": "g.s", // 指 g 选项中的 s 命令
+    "name": "Go To Line", // 在弹出的 VSpaceCode 的 g 中的 s 选项中显示的名称
+    "type": "command", 
+    "command": "workbench.action.gotoline", // VScode 跳转行的命令 id
+  }
+  ...
+]
+```
+
+这样，原来的 `g` 中的 `s` 对应的功能就被重写了。
+
+而如果我们要重写整个 `g` 的模块也是类似：
+
+```json
+"vspacecode.bindingOverrides": [
+  ...
+  {
+    "keys": "g", // 指要重新 g 选项
+    "name": "Go...", // 在弹出的 VSpaceCode 的 g 选项中显示的名称
+    "type": "bindings", // 对应下面的 bindings，即 g 命令下的子级命令
+    "bindings": [
+      {
+        "key": "g", // 指 g 选项的子级有一个 g 命令
+        "name": "Go To", // 在弹出的 VSpaceCode 的 g 中的 g 选项中显示的名称
+        "type": "command", 
+        "command": "workbench.action.gotoline", // VScode 跳转行的命令 id
+      }
+    ] 
+  }
+  ...
+]
+```
+
+这样配完后，我们激活 VSpaceCode 时，它的 `g` 对应就是我们的新功能 `Go...`，进入该选项里面只有一个子命令 `g`，对应 `Go To`。
+
+### 增加命令
+
+增加命令也是和重写类似，VSpaceCode 提供的配置字段为 `vspacecode.bindings`，而且我们如果增加的命令是和已有的命令的绑定是相同的，会直接覆盖，所以上面重新 `g` 模块也可以这样：
+
+```json
+"vspacecode.bindings": [
+  ...
+  {
+    "key": "g", // 指要重新 g 选项；注意！这里的字段是 key 而非 bindingOverrides 配置的 keys
+    "name": "Go...", // 在弹出的 VSpaceCode 的 g 选项中显示的名称
+    "type": "bindings", // 对应下面的 bindings，即 g 命令下的子级命令
+    "bindings": [
+      {
+        "key": "g", // 指 g 选项的子级有一个 g 命令
+        "name": "Go To", // 在弹出的 VSpaceCode 的 g 中的 g 选项中显示的名称
+        "type": "command", 
+        "command": "workbench.action.gotoline", // VScode 跳转行的命令 id
+      }
+    ] 
+  }
+  ...
+]
+```
+
+这样的效果也是和上面一样。
+
+:::tip 避免 VSpaceCode 的弹窗
+有的人可能觉得 VSpaceCode 弹窗不好，其实可以用 vim 实现对应的功能，它的原理和 vim 的 <Leader> 键是一样的。至于配置的喜好因人而异，大家也可以参考 [VSpaceCode 官方推荐的配置](https://github.com/VSpaceCode/VSpaceCode/blob/vscode-vim/settings.json)。
 :::
