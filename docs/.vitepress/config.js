@@ -179,6 +179,10 @@ module.exports = {
           {
             text: "Day 32：Vimium-c 页面操作",
             link: '/chrome/day-32.md'
+          },
+          {
+            text: "Day 33：Vimium-c 搜索与查找",
+            link: '/chrome/day-33.md'
           }
         ]
       }
