@@ -148,5 +148,5 @@ VSpaceCode 提供了个配置项 `vspacecode.bindingOverrides`，通过这个配
 这样的效果也是和上面一样。
 
 :::tip 避免 VSpaceCode 的弹窗
-有的人可能觉得 VSpaceCode 弹窗不好，其实可以用 vim 实现对应的功能，它的原理和 vim 的 <Leader> 键是一样的。至于配置的喜好因人而异，大家也可以参考 [VSpaceCode 官方推荐的配置](https://github.com/VSpaceCode/VSpaceCode/blob/vscode-vim/settings.json)。
+有的人可能觉得 VSpaceCode 弹窗不好，其实可以用 vim 实现对应的功能，它的原理和 vim 的 `<Leader>` 键是一样的。至于配置的喜好因人而异，大家也可以参考 [VSpaceCode 官方推荐的配置](https://github.com/VSpaceCode/VSpaceCode/blob/vscode-vim/settings.json)。
 :::
