@@ -187,6 +187,14 @@ module.exports = {
           {
             text: "Day 34：Vimium-c 标签页操作",
             link: '/chrome/day-34.md'
+          },
+          {
+            text: "Day 35：可能有用的命令",
+            link: '/chrome/day-35.md'
+          },
+          {
+            text: "Day 36：Chrome 开发者工具",
+            link: '/chrome/day-36.md'
           }
         ]
       }
