@@ -22,18 +22,17 @@ Mac 下推荐使用 brew 进行安装；运行命令 `brew install lazygit` 即�
 如果 brew 使用的是国内的源，有可能会导致安装时出错，比如依赖的包没有装上（我就是这样的情况），建议切回官方的源。
 :::
 
-
-
 ## 基本操作
 
-- 功能区移动
-- 功能区内切换
+- `h` / `l`：在左侧由上至下五个功能区焦点切换；
+- `j` / `k`：功能区内单条记录焦点切换；如 commit 记录焦点切换，分支焦点切换等；
+- `[` / `]`：功能区内有多个标签页的，可以通过这两个命令左右切换；如分支区的 `Local Branches` / `Remotes` / `Tags` 这几个标签页的切换；
 
 ## Git 操作
 
-- add
-- commit
-- discard
-- push
-- reset
-- breach
+- add：
+- commit：
+- discard：
+- push：
+- reset：
+- breach：
