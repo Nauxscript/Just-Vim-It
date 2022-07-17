@@ -189,7 +189,7 @@ module.exports = {
             link: '/chrome/day-34.md'
           },
           {
-            text: "Day 35：Vimium-c 可能有用的命令",
+            text: "Day 35：Vimium-c 再拓展",
             link: '/chrome/day-35.md'
           },
           {
