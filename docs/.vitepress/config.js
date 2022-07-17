@@ -197,7 +197,7 @@ module.exports = {
             link: '/chrome/day-36.md'
           },
           {
-            text: "Day 37：Chrome 的 Debug 功能",
+            text: "Day 37：Chrome 的 Debug",
             link: '/chrome/day-37.md'
           }
         ]
