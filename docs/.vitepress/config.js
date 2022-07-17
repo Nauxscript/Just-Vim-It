@@ -195,14 +195,18 @@ module.exports = {
           {
             text: "Day 36：Chrome 开发者工具",
             link: '/chrome/day-36.md'
+          },
+          {
+            text: "Day 37：Chrome 的 Debug 功能",
+            link: '/chrome/day-37.md'
           }
         ]
       },
       {
         text: "Terminal",
         items: [{
-            text: "Day 37：初识命令行窗口操作",
-            link: '/terminal/day-37.md'
+            text: "Day 38：初识命令行窗口操作",
+            link: '/terminal/day-38.md'
           },
         ]
       }
