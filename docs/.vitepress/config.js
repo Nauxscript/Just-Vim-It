@@ -205,7 +205,7 @@ module.exports = {
       {
         text: "Terminal",
         items: [{
-            text: "Day 38：初识命令行窗口操作",
+            text: "Day 38：初识命令行界面操作",
             link: '/terminal/day-38.md'
           },
         ]
