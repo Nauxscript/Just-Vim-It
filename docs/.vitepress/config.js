@@ -197,6 +197,14 @@ module.exports = {
             link: '/chrome/day-36.md'
           }
         ]
+      },
+      {
+        text: "Terminal",
+        items: [{
+            text: "Day 37：初识命令行窗口操作",
+            link: '/terminal/day-37.md'
+          },
+        ]
       }
     ],
     algolia: {
