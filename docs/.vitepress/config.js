@@ -212,7 +212,12 @@ module.exports = {
           {
             text: "Day 39：什么是 zellij",
             link: '/terminal/day-39.md'
+          },
+          {
+            text: "Day 40：zellij 的高级使用",
+            link: '/terminal/day-40.md'
           }
+
         ]
       }
     ],
