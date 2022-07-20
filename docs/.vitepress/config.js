@@ -204,10 +204,15 @@ module.exports = {
       },
       {
         text: "Terminal",
-        items: [{
+        items: [
+          {
             text: "Day 38：初识命令行界面操作",
             link: '/terminal/day-38.md'
           },
+          {
+            text: "Day 39：什么是 zellij",
+            link: '/terminal/day-39.md'
+          }
         ]
       }
     ],
