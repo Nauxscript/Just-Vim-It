@@ -1,4 +1,4 @@
-# 出神入化：zsh-vi-mode 进阶使用
+# 出神入化：进阶 zsh-vi-mode
 
 ## surround 老朋友
 

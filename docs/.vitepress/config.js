@@ -216,6 +216,14 @@ module.exports = {
           {
             text: "Day 40：zellij 的高级使用",
             link: '/terminal/day-40.md'
+          },
+          {
+            text: "Day 41：认识 zsh-vi-mode",
+            link: '/terminal/day-41.md'
+          },
+          {
+            text: "Day 42：进阶 zsh-vi-mode",
+            link: '/terminal/day-42.md'
           }
 
         ]
