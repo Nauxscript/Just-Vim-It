@@ -16,7 +16,14 @@
 
 [iTerm2](https://iterm2.com/) 作为 MacOS 端最受欢迎的命令行工具，提供了许多强大且好用的功能，可以说大部分人对于一款命令行工具的大部分需求，它都可以满足；所以命令行这一部分的训练是围绕着 iTerm2 来展开的；但又由于笔者使用的是 Warp，所以在每一章训练中会同步添加训练中介绍的 iTerm2 的功能对应的 Wrap 中的快捷键命令。
 
-## iTerm 界面操作
+## iTerm 及其界面操作
+
+安装 iTerm 极其简单，我们可以通过其官网链接下载，当然，MacOS 更推荐用 Homebrew 安装；通过 `brew install iterm2 --cask` 安装后，即可启动。
+
+:::tip iTerm2 窗口尺寸
+初始安装的 iTerm2 的窗口尺寸可能会比较小（笔者的就是），可以在打开 iTerm2 后通过顶部的 `iTerm2 > Preference` 或 `command` + `,` 打开设置窗口，在 `Profiles` 的下图位置中可以设置。
+
+:::
 
 ### 分屏
 
