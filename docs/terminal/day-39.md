@@ -16,7 +16,7 @@ vi ~/.zshrc
 :::tip 乱码问题
 安装完进入 zellij 后，可能有部分朋友会发现 zellij 的底部操作提示栏有些地方显示一些问号，这时因为一些符号在当前符号集中无法显示，可以在打开 iTerm2 后通过顶部的 `iTerm2 > Preference` 或 `command` + `,` 打开设置窗口，在 `Profiles` 的下图中的 `Use built-in Powerline glyphs` 勾上即可。
 
-
+![image-1](https://raw.githubusercontent.com/Nauxscript/Just-Vim-It/master/docs/public/images/day-39-1.png)
 :::
 
 ## 使用
