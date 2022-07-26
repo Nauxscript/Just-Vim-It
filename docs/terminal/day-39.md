@@ -6,7 +6,7 @@ zellij 的安装方式有几种，一般来说 MacOS 推荐使用 Homebrew 来�
 
 安装后在命令行工具键入 `zellij` 即可启动 zellij（有点像废话），但这个命令有点长，正如 `lazygit` 命令一样，我们可以配置一个别名来方便启动 zellij；
 
-```BASH
+```shell
 # 编辑 .zshrc 
 vi ~/.zshrc
 ```
