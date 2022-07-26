@@ -23,6 +23,8 @@
 :::tip iTerm2 窗口尺寸
 初始安装的 iTerm2 的窗口尺寸可能会比较小（笔者的就是），可以在打开 iTerm2 后通过顶部的 `iTerm2 > Preference` 或 `command` + `,` 打开设置窗口，在 `Profiles` 的下图位置中可以设置。
 
+![image-1](https://raw.githubusercontent.com/Nauxscript/Just-Vim-It/master/docs/public/images/day-38-1.png)
+
 :::
 
 ### 分屏
