@@ -24,7 +24,6 @@
 初始安装的 iTerm2 的窗口尺寸可能会比较小（笔者的就是），可以在打开 iTerm2 后通过顶部的 `iTerm2 > Preference` 或 `command` + `,` 打开设置窗口，在 `Profiles` 的下图位置中可以设置。
 
 ![image-1](https://raw.githubusercontent.com/Nauxscript/Just-Vim-It/master/docs/public/images/day-38-1.png)
-
 :::
 
 ### 分屏
@@ -48,6 +47,7 @@
 当我们下载好 iTerm2 并在它内部使用 vim 时，你可能会发现当我们想用 `command` + `enter` 另起一行时，会变成全屏的效果（笔者遇到这个情况时一脸懵逼，完全不明白为什么它要把这个快捷键设置为全屏功能），为了使用方便，我们可以通过 `iTerm2 > Preference > Keys` 设置：
 
 
+![image-2](https://raw.githubusercontent.com/Nauxscript/Just-Vim-It/master/docs/public/images/day-38-2.png)
 :::
 ## Warp 界面操作
 
