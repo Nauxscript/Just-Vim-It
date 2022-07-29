@@ -1,4 +1,4 @@
 node_modules/
 docs/.vitepress/dist
-.DS_Store
 .env
+**/.DS_Store
