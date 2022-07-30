@@ -227,6 +227,15 @@ module.exports = {
           }
 
         ]
+      },
+      {
+        text: "Mac App",
+        items: [
+          {
+            text: "Day 48：Alfred 的 clipboard",
+            link: "/Mac App/day-48.md"
+          }
+        ]
       }
     ],
     algolia: {
