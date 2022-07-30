@@ -1,4 +1,8 @@
 node_modules/
 docs/.vitepress/dist
 .env
+.DS_Store
 **/.DS_Store
+.DS_Store?
+*.DS_Store
+docs/.pnpm-debug.log
