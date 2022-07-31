@@ -37,17 +37,10 @@
   + Rich Text Snippet（富文本片段） - Retain formatting on paste where possible （尽可能保留粘贴时的格式）；
 - Snippet：文本片段内容；
 
-:::tip 关键字
-在本文的第一张图可以看到，此时右边的 Snippet “date” 的 keyword 显示的是 `nndate`，而在第三张图中，我设置的 keyword 明明是 `date`；关键就在于第二张图中我给 tool 集合设置的前缀 `nn`，该前缀会和单条 Snippet 中设置的 keyword 值合并为一个；
-
-这是因为在我们打开了图一中的 `Automatically expand snippets by keyword` 选项后，我们在任何地方键入已添加的 Snippet 的关键字时，会替换成对应的文本片段，比如我的 Snippet “date” 的关键字是 `date`，那我在输入 date 是则会变成 `YYYY-MM-DD HH:mm:SS` 格式的当前时间文本值；但问题是我们在日常使用中 “date” 这个单词也是很常用的，所以为了区分开触发 Snippet 的情况与正常使用的情况，我们为集合加上了一个前缀，这样其内部的 Snippet 触发时的规则就比较特异而又有规律了，比如我的 Snippet “date” 则会在我键入 `nndate` 时触发。
-:::
-
 ## 使用
 
-正如上面提到的，我们添加了 Snippet 后可以通过：
+我们添加了 Snippet 后可以：
 
-- 键入关键字的方式触发，如笔者的 `nndate`；
 - 通过图一设置的 viewer hotkey 的组合键激活 Snippet 搜索，再键入已添加的集合或 Snippet 名称或关键字搜索，如笔者的 `ctrl` + `option` + `s` 激活搜索，再键入 `tool` 然后选择 Snippet， 或键入 `date` 或 `nndate` 直接搜索对应 Snippet，选中后通过 `command` + `v` 即可粘贴该 Snippet 内容到对应位置；
 - 激活 Alfred 后键入自己设置的图一中的 Snippet keyword 加空格加已添加的 Snippet 名称或关键字搜索，如笔者的 `sp` + ` date` 或 + ` nndate`，选中后通过 `command` + `v` 即可粘贴该 Snippet 内容到对应位置；
 
@@ -64,4 +57,23 @@
 
 ## 自动展开
 
+在本文的第一张图可以看到，此时右边的 Snippet “date” 的 keyword 显示的是 `nndate`，而在第三张图中，我设置的 keyword 明明是 `date`；关键就在于第二张图中我给 tool 集合设置的前缀 `nn`，该前缀会和单条 Snippet 中设置的 keyword 值合并为一个；
+
+这是因为在我们打开了图一中的 `Automatically expand snippets by keyword` 选项，这就是自动展开。
+
+开启这个设置后，我们在任何地方键入已添加的 Snippet 的关键字时，会替换成对应的文本片段，比如我的 Snippet “date” 的关键字是 `date`，那我在输入 date 是则会变成 `YYYY-MM-DD HH:mm:SS` 格式的当前时间文本值；但问题是我们在日常使用中 “date” 这个单词也是很常用的，所以为了区分开触发 Snippet 的情况与正常使用的情况，我们为集合加上了一个前缀，这样其内部的 Snippet 触发时的规则就比较特异而又有规律了，比如我的 Snippet “date” 则会在我键入 `nndate` 时触发。
+
+可以看出，指令（即类似上面的 `nndate`）的组成是：**分组前缀 Affix + Snippet 记录的 Keyword + 分组 Keyword**；
+
+说到这里，关于自动展开的几个要点就很明了了，即**指令不要有歧义**，比如如果笔者的 `date` 指令没有设置所在集合的前缀，则在正常输入 date 时却变成了时间文本片段，这就导致了问题；而且即使如笔者那样设置了前缀，也不是万无一失，所以官方给出了这几点建议：
+
+- Snippet 要以非字母数字开头；可以用 `!` / `:` / `^` 等符号开头；
+- 在 Keyword 中不要使用正常词汇，以防止错误的展开，如上面的 `date`；
+- 使用不常用的大写形式，比如末尾大小的方式，如 `datE`
+- 使用双重字母，如 `ddate`；
+
+以上几点其实就是为了防止我们在正常输入中意外地展开；而尽可能地使指令特异化。
+
 ## 分享
+
+Alfred 也提供了 Snippets 的导出，我们可以通过导出功能与朋友或社区分享自己的 Snippets 配置，正所谓众人拾柴火焰高，要从社区中来，到社区中去。操作也很简单，在集合列表中选中某条记录点击右键，选择 `export` 即可导出为 Alfred 专用的 Snippet 文件；导入也很简单，双击别人导出的 Snippet 文件，即可自动导入。
