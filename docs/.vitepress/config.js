@@ -204,8 +204,7 @@ module.exports = {
       },
       {
         text: "Terminal",
-        items: [
-          {
+        items: [{
             text: "Day 38：初识命令行界面操作",
             link: '/terminal/day-38.md'
           },
@@ -224,17 +223,47 @@ module.exports = {
           {
             text: "Day 42：进阶 zsh-vi-mode",
             link: '/terminal/day-42.md'
+          },
+          {
+            text: "Day 43：zsh 常用插件",
+            link: '/terminal/day-43.md'
+          },
+          {
+            text: "Day 44：zsh 自定义快捷键",
+            link: '/terminal/day-44.md'
           }
-
         ]
       },
       {
         text: "Mac App",
-        items: [
+        items: [{
+            text: "Day 45：Manico",
+            link: "/Mac App/day-45.md"
+          },
           {
-            text: "Day 48：Alfred 的 clipboard",
+            text: "Day 46：Moom",
+            link: "/Mac App/day-46.md"
+          },
+          {
+            text: "Day 47：Alfred",
+            link: "/Mac App/day-47.md"
+          },
+          {
+            text: "Day 48：Alfred Clipboard",
             link: "/Mac App/day-48.md"
-          }
+          },
+          {
+            text: "Day 49：Alfred Snippets",
+            link: "/Mac App/day-49.md"
+          },
+          {
+            text: "Day 50：Alfred 的 Workflow",
+            link: "/Mac App/day-50.md"
+          },
+          {
+            text: "Day 51：MacOS 系统快捷键",
+            link: "/Mac App/day-51.md"
+          },
         ]
       }
     ],
