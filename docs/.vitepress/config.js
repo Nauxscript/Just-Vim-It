@@ -264,6 +264,10 @@ module.exports = {
             text: "Day 51：MacOS 系统快捷键",
             link: "/Mac App/day-51.md"
           },
+          {
+            text: "Day 51：Finder 快捷键",
+            link: "/Mac App/day-52.md"
+          },
         ]
       }
     ],
