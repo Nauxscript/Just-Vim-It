@@ -245,7 +245,7 @@ module.exports = {
             link: "/Mac App/day-46.md"
           },
           {
-            text: "Day 47：Alfred",
+            text: "Day 47：Alfred 搜索初体验",
             link: "/Mac App/day-47.md"
           },
           {
