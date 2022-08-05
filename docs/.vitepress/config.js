@@ -265,8 +265,12 @@ module.exports = {
             link: "/Mac App/day-51.md"
           },
           {
-            text: "Day 51：Finder 快捷键",
+            text: "Day 52：Finder 快捷键",
             link: "/Mac App/day-52.md"
+          },
+          {
+            text: "Day 53：文本编辑快捷键",
+            link: "/Mac App/day-53.md"
           },
         ]
       }
