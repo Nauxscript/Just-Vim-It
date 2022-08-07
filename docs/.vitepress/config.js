@@ -276,6 +276,10 @@ module.exports = {
             text: "Day 54：Obsidian 中的 vim",
             link: "/Mac App/day-54.md"
           },
+          {
+            text: "Day 54：Obsidian 常用文件操作",
+            link: "/Mac App/day-54.md"
+          },
         ]
       }
     ],
