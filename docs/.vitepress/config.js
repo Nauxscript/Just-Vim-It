@@ -277,8 +277,12 @@ module.exports = {
             link: "/Mac App/day-54.md"
           },
           {
-            text: "Day 54：Obsidian 常用文件操作",
-            link: "/Mac App/day-54.md"
+            text: "Day 55：Obsidian 常用文件操作",
+            link: "/Mac App/day-55.md"
+          },
+          {
+            text: "Day 56：Obsidian 编辑常用命令",
+            link: "/Mac App/day-56.md"
           },
         ]
       }
