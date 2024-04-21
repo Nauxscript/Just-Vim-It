@@ -178,14 +178,14 @@ packages:
     resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==}
     dev: true
 
-  /@vitejs/plugin-vue@2.3.3(vite@2.9.17)(vue@3.2.37):
+  /@vitejs/plugin-vue@2.3.3(vite@2.9.18)(vue@3.2.37):
     resolution: {integrity: sha512-SmQLDyhz+6lGJhPELsBdzXGc+AcaT8stgkbiTFGpXPe8Tl1tJaBw1A6pxDqDuRsVkD8uscrkx3hA7QDOoKYtyw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       vite: ^2.5.10
       vue: ^3.2.25
     dependencies:
-      vite: 2.9.17
+      vite: 2.9.18
       vue: 3.2.37
     dev: true
 
@@ -696,8 +696,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /vite@2.9.17:
-    resolution: {integrity: sha512-XxcRzra6d7xrKXH66jZUgb+srThoPu+TLJc06GifUyKq9JmjHkc1Numc8ra0h56rju2jfVWw3B3fs5l3OFMvUw==}
+  /vite@2.9.18:
+    resolution: {integrity: sha512-sAOqI5wNM9QvSEE70W3UGMdT8cyEn0+PmJMTFvTB8wB0YbYUWw3gUbY62AOyrXosGieF2htmeLATvNxpv/zNyQ==}
     engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:
@@ -727,11 +727,11 @@ packages:
     dependencies:
       '@docsearch/css': 3.1.0
       '@docsearch/js': 3.1.0(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)
-      '@vitejs/plugin-vue': 2.3.3(vite@2.9.17)(vue@3.2.37)
+      '@vitejs/plugin-vue': 2.3.3(vite@2.9.18)(vue@3.2.37)
       '@vueuse/core': 8.6.0(vue@3.2.37)
       body-scroll-lock: 4.0.0-beta.0
       shiki: 0.10.1
-      vite: 2.9.17
+      vite: 2.9.18
       vue: 3.2.37
     transitivePeerDependencies:
       - '@types/react'
